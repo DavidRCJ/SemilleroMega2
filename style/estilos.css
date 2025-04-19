@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Titan+One&display=swap');
+
+  
+  
+body{
+    background-image: url(/assets/cultoMov.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.Content{
+    width: 100%;
+    text-align:center;
+    margin-top: auto; 
+    padding:15%;
+}
+.titan-one-regular {
+    font-family: "Titan One", sans-serif;
+    font-size: 120px;
+    color: rgb(255, 53, 124);
+    text-shadow: 5px 5px 5px rgb(70, 255, 172);
+    font-style: normal;     
+    margin-bottom: 50px;    
+  }
+
+#btn{
+   background-color: rgb(25, 255, 13);
+   border-color: blue;
+   margin-bottom:80px;
+}
+
+  .pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-size: 80px;
+    color: rgb(246, 255, 0);
+    font-style: normal;
+    margin-bottom: 100px;
+  }
