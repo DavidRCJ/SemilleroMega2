@@ -41,53 +41,60 @@
     </div>
 </nav>    
 <body>
+  
     <section>
       <div>
         <h1>Profile</h1>
       </div>
     </section>
     <section class="profile">
+      <section class="profile text-center">
         <div>
-            <img src="./assets/profile.png" alt="Profile">
+          <label for="imgInput">
+            <img id="profileImg" src="./assets/profile.png" alt="Profile" width="200" style="cursor: pointer;">
+          </label>
+          <input type="file" id="imgInput" accept="image/*" style="display: none;">
         </div>
+      </section>
+       <!-- <div>  <img src="./assets/profile.png" alt="Profile">   </div> -->
     </section>
     <section>
         <div class="container">
             
         <div class="input-group input-group-lg">
             <span class="input-group-text" id="inputGroup-sizing-lg">Full Name</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+            <input type="text" class="form-control" id="fullName" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
         </div>
 
         <div class="input-group input-group-lg">
             <span class="input-group-text" id="inputGroup-sizing-lg">User Name</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+            <input type="text" class="form-control" id="userName" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
         </div>
 
         <div class="input-group input-group-lg">
             <span class="input-group-text" id="inputGroup-sizing-lg">Email</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+            <input type="text" class="form-control" id="email" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
         </div>
 
         <div class="input-group input-group-lg">
             <span class="input-group-text" id="inputGroup-sizing-lg">Phone Number</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+            <input type="text" class="form-control" id="phoneNumber" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
         </div>
         <div class="form-floating">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+            <textarea class="form-control" placeholder="Leave a comment here" id="about" id="floatingTextarea2" style="height: 100px"></textarea>
             <label for="floatingTextarea2">About you</label>
           </div>
 
         <div class="container text-center">
             <div class="row align-items-start">
               <div class="col">
-                <button type="button" class="btn btn-primary btn-lg">Guardar</button>
+                <button id="btnGuardar" type="button" class="btn btn-primary btn-lg">Guardar</button>
               </div>
               <div class="col">
-                <button type="button" class="btn btn-primary btn-lg">Editar</button>
+                <button id="btnEditar" type="button" class="btn btn-primary btn-lg">Editar</button>
               </div>
               <div class="col">
-                <button type="button" class="btn btn-primary btn-lg">Salir</button>
+                <button id="btnSalir" type="button" class="btn btn-primary btn-lg">Salir</button>
               </div>
             </div>
           </div>
@@ -96,5 +103,7 @@
 
         </div>
     </section>
+
+    <script src="./js/perfil.js"></script>
 </body>
 </html>

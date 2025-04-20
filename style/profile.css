@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(57, 15, 115);
+    background: linear-gradient(20deg,black,rgb(3, 33, 81),rgb(136, 136, 136),rgb(2, 26, 75))
 }
 .profile{
     display: flex;
@@ -7,6 +7,12 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+img {
+    height: 300px;
+    width: auto;
+    border-radius: 50%;
+  }
 h1 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     display: flex;

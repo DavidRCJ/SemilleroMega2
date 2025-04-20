@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(18, 17, 57);
+  background: linear-gradient(20deg,black,rgb(3, 33, 81),rgb(136, 136, 136),rgb(2, 26, 75))
 }
 
 .container text-center{

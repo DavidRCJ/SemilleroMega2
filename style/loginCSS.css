@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Pacifico&family=Titan+One&display=swap');
 
 body{
-    background-color: rgb(26, 26, 47);
+  background: linear-gradient(20deg,black,rgb(31, 35, 41),rgb(136, 136, 136),rgb(18, 21, 25))
 }
   .matriz {
     display: grid;
@@ -61,7 +61,7 @@ img{
     font-size: 120px;
     font-style:  cursive;
     text-shadow: 2em;
-    text-shadow: 5px 5px 5px rgb(112, 112, 112);
+    text-shadow: 5px 5px 5px rgb(0, 11, 44);
     color: rgb(255, 255, 255);
     padding: 1%5% 0;
   }
