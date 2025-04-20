@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: rgb(18, 17, 57);
 }
 
 .container text-center{
@@ -22,3 +22,19 @@ img{
   border-radius: 50%;
   box-shadow: 10px 10px rgb(3, 32, 67)
 }
+@media (max-width: 768px) {
+    h2 {
+      font-size: 28px;
+    }
+  
+    img {
+      height: 500px;
+      width: auto;
+    }
+  
+    .container {
+      gap: 30px;
+      padding: 10%;
+    }
+  }
+  

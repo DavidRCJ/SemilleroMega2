@@ -26,9 +26,11 @@ body{
   }
 
 #btn{
-   background-color: rgb(25, 255, 13);
+   background-color: rgb(227, 13, 255);
+   width: 200px;
+   height:80px;
    border-color: blue;
-   margin-bottom:80px;
+   margin: bottom 200px;
 }
 
   .pacifico-regular {
@@ -38,3 +40,33 @@ body{
     font-style: normal;
     margin-bottom: 100px;
   }
+
+  .Content {
+    width: 100%;
+    max-width: 1200px; /* Limita el ancho en pantallas grandes */
+    margin: 0 auto;     /* Centra el contenido */
+    text-align: center;
+    padding: 10%;       /* Espaciado general */
+    box-sizing: border-box;
+}
+
+/* Estilo responsive para móviles */
+@media (max-width: 768px) {
+  .titan-one-regular {
+    font-size: 50px;
+  }
+
+  .pacifico-regular {
+    font-size: 30px;
+  }
+
+  #btn {
+    width: 150px;
+    height: 60px;
+    font-size: 18px;
+  }
+
+  .Content {
+    padding: 5%;
+  }
+}

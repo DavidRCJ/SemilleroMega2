@@ -40,11 +40,35 @@ img{
 
 h1{
     text-align: center;
-    font-size: 120px;
-    color: blueviolet;
-    text-shadow: 5px 5px 5px rgb(255, 255, 255);
+    font-family: "Hachi Maru Pop", cursive;
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px rgb(255, 0, 200);
    }
 
 .fields{
    padding: 30%;
+}
+
+@media (max-width: 768px) {
+  .matriz {
+    grid-template-columns: 1fr; /* 1 columna en móvil */
+    padding: 5%;
+  }
+
+  .matriz2 {
+    grid-template-columns: 1fr; /* 1 columna también en sub-grid */
+  }
+
+  img {
+    width: 100;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .fields {
+    padding: 10%;
+  }
 }
