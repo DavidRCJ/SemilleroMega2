@@ -25,3 +25,14 @@ Para cuando se permite entrar nos arroja a la pestaña de movies
 ![](/CapturasPantallaEntrega/verificacion.png)
 
 
+3.- Las ventanas que necesitan almacenar datos se les dio funcionalidad como la de perfil permitiendo gaurdar y alamcenar datos del usuario ademas de cambio de foto.
+Se le dio La validación para almacenar campos hacemos uso del Local Storage, para almacenar datos del usuario además permite cambiar la imagen de usuario cuando pulsamos sobre ell. 
+
+La interfaz presenta 3 botones, guardar, editar y sali.
+
+El botón guardar: cuando los campos están vacíos permite guardar los datos.
+
+El segundo botón editar permite editar los datos cuando ya se guardan los datos.
+
+El botón salir nos permite salir a la pantalla inicial que es home.
+![](/CapturasPantallaEntrega/perfil.png)
