@@ -51,15 +51,15 @@
         </div>
         <div class="container text-center">
             <div class="row">
-              <div class="col"><a class="btn" href=""><img src="./assets/Culto/pullFitction.jpg" class="rounded mx-auto d-block" alt="Movie1"></a> </div>
-              <div class="col"><a class="btn" href=""><img src="./assets/Culto/buttEffect.jpg" class="rounded mx-auto d-block" alt="Movie1"></a></div>
-              <div class="col"><a class="btn" href=""><img src="./assets/Culto/donieDarko.jpg" class="rounded mx-auto d-block" alt="Movie1"></a></div>
-              <div class="col"><a class="btn" href=""><img src="./assets/Culto/mechanicalOrange.jpg" class="rounded mx-auto d-block" alt="Movie1"></a></div>
-              <div class="col"><a class="btn" href=""><img src="./assets/Culto/theyAreLive.jpg" class="rounded mx-auto d-block" alt="Movie1"></a></div>
+              <div class="col"><a class="btn movie-link"  data-id="pulpFiction" href="./detalle.html"><img src="./assets/Culto/pullFitction.jpg" class="rounded mx-auto d-block" alt="Pulp Fiction"></a></div>
+              <div class="col">><a class="btn movie-link" data-id="mariposa" href="./detalle.html"><img src="./assets/Culto/buttEffect.jpg" class="rounded mx-auto d-block" alt=""></a></div>
+              <div class="col">><a class="btn movie-link" data-id="donie" href="./detalle.html"><img src="./assets/Culto/donieDarko.jpg" class="rounded mx-auto d-block" alt=""></a></div>
+              <div class="col">><a class="btn movie-link" data-id="orange" href="./detalle.html"><img src="./assets/Culto/mechanicalOrange.jpg" class="rounded mx-auto d-block" alt=""></a></div>
+              <div class="col">><a class="btn movie-link" data-id="live" href="./detalle.html"><img src="./assets/Culto/theyAreLive.jpg" class="rounded mx-auto d-block" alt=""></a></div>
             </div>
           </div>
     </section>
-
+ 
     <section>
         <div class="cont">
             <h2>
@@ -68,18 +68,26 @@
         </div>
         <div class="container text-center">
             <div class="row">
-                <div class="col"><a class="btn" href=""><img src="./assets/Comedy/21jumpStreet.jpg" class="rounded mx-auto d-block" alt="Movie1"></a></div>
-                <div class="col"><a class="btn" href=""><img src="./assets/Comedy/aceVentura.jpg" class="rounded mx-auto d-block" alt="Movie1"></a></div>
-                <div class="col"><a class="btn" href=""><img src="./assets/Comedy/hangOver.jpg" class="rounded mx-auto d-block" alt="Movie1"></a></div>
-                <div class="col"><a class="btn" href=""><img src="./assets/Comedy/scary movie.jpg" class="rounded mx-auto d-block" alt="Movie1"></a></div>
-                <div class="col"><a class="btn" href=""><img src="./assets/Comedy/superCool.jpg" class="rounded mx-auto d-block" alt="Movie1"></a></div>
+                <div class="col">><a class="btn movie-link" data-id="jump" href="./detalle.html"><img src="./assets/Comedy/21jumpStreet.jpg" class="rounded mx-auto d-block" alt="Pulp Fiction"></a></div>
+                <div class="col">><a class="btn movie-link" data-id="ace" href="./detalle.html"><img src="./assets/Comedy/aceVentura.jpg" class="rounded mx-auto d-block" alt="Pulp Fiction"></a></div>
+                <div class="col">><a class="btn movie-link" data-id="over" href="./detalle.html"><img src="./assets/Comedy/hangOver.jpg" class="rounded mx-auto d-block" alt="Pulp Fiction"></a></div>
+                <div class="col">><a class="btn movie-link" data-id="scary" href="./detalle.html"><img src="./assets/Comedy/scary movie.jpg" class="rounded mx-auto d-block" alt="Pulp Fiction"></a></div>
+                <div class="col">><a class="btn movie-link" data-id="cool" href="./detalle.html"><img src="./assets/Comedy/superCool.jpg" class="rounded mx-auto d-block" alt="Pulp Fiction"></a></div>
               
             </div>
           </div>
-    </section>
+    </section>     
+    <script>
+      document.querySelectorAll('.movie-link').forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const movieId = link.getAttribute('data-id');
+          localStorage.setItem('selectedMovie', movieId);
+          window.location.href = 'detalle.html';
+        });
+      });
+    </script> 
  </body>
-
-
 </html>
 
 
