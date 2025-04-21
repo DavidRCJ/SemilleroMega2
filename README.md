@@ -36,3 +36,19 @@ El segundo botón editar permite editar los datos cuando ya se guardan los datos
 
 El botón salir nos permite salir a la pantalla inicial que es home.
 
+
+4.- Ahora se agrago un archivo llamado 'detalle.js' para mostrar la informacion correspondiente de cada pelicula o serie y al ser dinamica solo se crearon objetos en lugar de una base de datos que en el futuro se cambiara para almacenar mas stock de peliculas,
+una vez en la seccion de peliculas o series al pulsar cualquier elemento lo arroja a este tipo de ventana:
+
+
+![](/CapturasPantallaEntrega/dinamicaScreen.png)
+
+5.- Ahora empezamos la migración necesitamos la version de Angular 18 instalada: 
+
+
+![](/CapturasPantallaEntrega/vAngular.png)
+
+Para poder la version en angular es necesario cambiar de rama a vAngular
+
+
+
