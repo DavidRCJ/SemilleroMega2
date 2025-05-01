@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Titan+One&display=swap');
+
+  
+  
+body{
+    background-image: url(/assets/cultoMov.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.Content{
+    width: 100%;
+    text-align:center;
+    margin-top: auto; 
+    padding:15%;
+}
+.titan-one-regular {
+    font-family: "Titan One", sans-serif;
+    font-size: 120px;
+    color: rgb(255, 53, 124);
+    text-shadow: 5px 5px 5px rgb(70, 255, 172);
+    font-style: normal;     
+    margin-bottom: 50px;    
+  }
+
+#btn{
+   background-color: rgb(227, 13, 255);
+   width: 200px;
+   height:80px;
+   border-color: blue;
+   margin: bottom 200px;
+}
+
+  .pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-size: 80px;
+    color: rgb(246, 255, 0);
+    font-style: normal;
+    margin-bottom: 100px;
+  }
+
+  .Content {
+    width: 100%;
+    max-width: 1200px; /* Limita el ancho en pantallas grandes */
+    margin: 0 auto;     /* Centra el contenido */
+    text-align: center;
+    padding: 10%;       /* Espaciado general */
+    box-sizing: border-box;
+}
+
+/* Estilo responsive para móviles */
+@media (max-width: 768px) {
+  .titan-one-regular {
+    font-size: 50px;
+  }
+
+  .pacifico-regular {
+    font-size: 30px;
+  }
+
+  #btn {
+    width: 150px;
+    height: 60px;
+    font-size: 18px;
+  }
+
+  .Content {
+    padding: 5%;
+  }
+}
