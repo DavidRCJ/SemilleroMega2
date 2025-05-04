@@ -5,42 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/style/movies.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="/semillero-angular/src/app/pages/movies/movies.component.css">
+    <title>Movies</title>
 </head>
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">All Movies</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./movies.html">Movies</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./series.html">Series</a>
-          </li>
-         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Favoritos</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="A lo mejor si existe">
-          <button class="btn btn-outline-success" type="submit">Buscar</button>
-          <div>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./profile.html">Perfil</a>
-                </li>
-            </ul>
-          </div>
-        </form>
-      </div>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">All Movies</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="/src/pages/movies/movies.component.html">Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="/src/pages/series/series.component.html">Series</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Favoritos</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" />
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+        <a class="nav-link active" routerLink="/src/pages/profile/profile.component.htlml">Perfil</a>
+      </form>
     </div>
-  </nav>    
+  </div>
+</nav> 
 
   <body>
     <section>
@@ -113,16 +104,6 @@
       </div>
     </section>
     
-    <script>
-      document.querySelectorAll('.movie-link').forEach(link => {
-        link.addEventListener('click', (e) => {
-          e.preventDefault();
-          const movieId = link.getAttribute('data-id');
-          localStorage.setItem('selectedMovie', movieId);
-          window.location.href = 'detalle.html';
-        });
-      });
-    </script> 
  </body>
 </html>
 
