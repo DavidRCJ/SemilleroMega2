@@ -48,7 +48,23 @@ una vez en la seccion de peliculas o series al pulsar cualquier elemento lo arro
 
 ![](/CapturasPantallaEntrega/vAngular.png)
 
-Para poder la version en angular es necesario cambiar de rama a vAngular
+Para poder la version en angular cree una carpeta dentro del repo Llamada semillero-Angular, y los archivos de la version 1 en la carpeta normal version.
+
+![](/CapturasPantallaEntrega/directorios.jpg)
+
+
+Bueno creamos los packages para cada vista en el proyecto
+
+![](/CapturasPantallaEntrega/packAngualr.jpg)
+
+Ahora procedemos a conectar HTML Y CSS de las diferentes vistas
+
+
+
+
+
+
+
 
 
 
