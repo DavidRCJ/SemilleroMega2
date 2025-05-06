@@ -1,5 +1,6 @@
 body{
-    background: linear-gradient(20deg,black,rgb(3, 33, 81),rgb(136, 136, 136),rgb(2, 26, 75))
+    background: linear-gradient(20deg,black,rgb(3, 33, 81),rgb(136, 136, 136),rgb(2, 26, 75));
+    z-index: -1;
   }
   
   .container text-center{

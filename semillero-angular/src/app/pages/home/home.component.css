@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Titan+One&display=swap');
-
-  
-  
-body{
-    background-image: url(/assets/cultoMov.png);
+body
+{   
+    background-image: url('/assets/cultoMov.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    z-index: -1;
+  }
 
-}
 .Content{
     width: 100%;
     text-align:center;
@@ -31,6 +30,7 @@ body{
    height:80px;
    border-color: blue;
    margin: bottom 200px;
+   z-index: 2;
 }
 
   .pacifico-regular {

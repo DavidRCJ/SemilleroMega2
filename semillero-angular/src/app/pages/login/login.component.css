@@ -1,8 +1,7 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Pacifico&family=Titan+One&display=swap');
 
 body{
-  background: linear-gradient(20deg,black,rgb(31, 35, 41),rgb(136, 136, 136),rgb(18, 21, 25))
+  background: linear-gradient(20deg,black,rgb(31, 35, 41),rgb(136, 136, 136),rgb(18, 21, 25));  
 }
   .matriz {
     display: grid;
@@ -10,6 +9,7 @@ body{
     grid-template-rows: repeat(1, auto);   /* 2 filas */
     gap:0.1%;    
     height: 100vh;
+    z-index: 1;
    
   }
   
@@ -38,6 +38,7 @@ img{
     object-fit: cover; /* Recorta para llenar sin deformar */
     display: block;
     border-radius: 20%;
+    z-index: 1;
 }
 
 .matriz div .matriz3{

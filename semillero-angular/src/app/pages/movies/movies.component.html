@@ -1,110 +1,166 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/semillero-angular/src/app/pages/movies/movies.component.css">
-    <title>Movies</title>
+    <title>Document</title>
 </head>
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">All Movies</a>
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" routerLink="/src/pages/movies/movies.component.html">Movies</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" routerLink="/src/pages/series/series.component.html">Series</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Favoritos</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" />
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
-        <a class="nav-link active" routerLink="/src/pages/profile/profile.component.htlml">Perfil</a>
-      </form>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">All Movies</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/semillero-angular/src/app/pages/movies/movies.component.html">Movies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/semillero-angular/src/app/pages/series/series.component.html">Series</a>
+          </li>
+         <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Favoritos</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="A lo mejor si existe">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+          <div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/semillero-angular/src/app/pages/profile/profile.component.html">Perfil</a>
+                </li>
+            </ul>
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
-</nav> 
+  </nav>    
 
   <body>
     <section>
-      <div class="cont">
-        <h2>Culto</h2>
-      </div>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col">
-            <a [routerLink]="['/detail', 'pulpfiction']">
-              <img src="/assets/Culto/pullFitction.jpg" class="rounded mx-auto d-block" alt="Movie1">
-            </a>
-          </div>
-          <div class="col">
-            <a [routerLink]="['/detail', 'butterfly']">
-              <img src="/assets/Culto/buttEffect.jpg" class="rounded mx-auto d-block" alt="Movie1">
-            </a>
-          </div>
-          <div class="col">
-            <a [routerLink]="['/detail', 'darko']">
-              <img src="/assets/Culto/donieDarko.jpg" class="rounded mx-auto d-block" alt="Movie1">
-            </a>
-          </div>
-          <div class="col">
-            <a [routerLink]="['/detail', 'orange']">
-              <img src="/assets/Culto/mechanicalOrange.jpg" class="rounded mx-auto d-block" alt="Movie1">
-            </a>
-          </div>
-          <div class="col">
-            <a [routerLink]="['/detail', 'live']">
-              <img src="/assets/Culto/theyAreLive.jpg" class="rounded mx-auto d-block" alt="Movie1">
-            </a>
-          </div>
+        <div class="cont">
+            <h2>
+                Culto
+            </h2>
         </div>
-      </div>
+        <div class="container text-center">
+            <div class="row">
+              <div class="col"><a class="btn movie-link"  data-id="pulpFiction" href="/semillero-angular/src/app/pages/detalle/detalle.component.html"><img src="/semillero-angular/public/recurso/Culto/pullFitction.jpg" class="rounded mx-auto d-block" alt="Pulp Fiction"></a></div>
+              <div class="col">><a class="btn movie-link" data-id="mariposa" href="/semillero-angular/src/app/pages/detalle/detalle.component.html"><img src="/semillero-angular/public/recurso/Culto/buttEffect.jpg" class="rounded mx-auto d-block" alt=""></a></div>
+              <div class="col">><a class="btn movie-link" data-id="donie" href="/semillero-angular/src/app/pages/detalle/detalle.component.html"><img src="/semillero-angular/public/recurso/Culto/donieDarko.jpg" class="rounded mx-auto d-block" alt=""></a></div>
+              <div class="col">><a class="btn movie-link" data-id="orange" href="/semillero-angular/src/app/pages/detalle/detalle.component.html"><img src="/semillero-angular/public/recurso/Culto/mechanicalOrange.jpg" class="rounded mx-auto d-block" alt=""></a></div>
+              <div class="col">><a class="btn movie-link" data-id="live" href="/semillero-angular/src/app/pages/detalle/detalle.component.html"><img src="/semillero-angular/public/recurso/Culto/theyAreLive.jpg" class="rounded mx-auto d-block" alt=""></a></div>
+            </div>
+          </div>
     </section>
-    
+ 
     <section>
-      <div class="cont">
-        <h2>Comedia</h2>
-      </div>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col">
-            <a [routerLink]="['/detail', 'jumpstreet']">
-              <img src="/assets/Comedy/21jumpStreet.jpg" class="rounded mx-auto d-block" alt="Movie1">
-            </a>
-          </div>
-          <div class="col">
-            <a [routerLink]="['/detail', 'ventura']">
-              <img src="/assets/Comedy/aceVentura.jpg" class="rounded mx-auto d-block" alt="Movie1">
-            </a>
-          </div>
-          <div class="col">
-            <a [routerLink]="['/detail', 'hangover']">
-              <img src="/assets/Comedy/hangOver.jpg" class="rounded mx-auto d-block" alt="Movie1">
-            </a>
-          </div>
-          <div class="col">
-            <a [routerLink]="['/detail', 'scary']">
-              <img src="/assets/Comedy/scary movie.jpg" class="rounded mx-auto d-block" alt="Movie1">
-            </a>
-          </div>
-          <div class="col">
-            <a [routerLink]="['/detail', 'supercool']">
-              <img src="/assets/Comedy/superCool.jpg" class="rounded mx-auto d-block" alt="Movie1">
-            </a>
-          </div>
+        <div class="cont">
+            <h2>
+                Comedia
+            </h2>
         </div>
-      </div>
-    </section>
-    
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">><a class="btn movie-link" data-id="jump" href="/semillero-angular/src/app/pages/detalle/detalle.component.html"><img src="/semillero-angular/public/recurso/Comedy/21jumpStreet.jpg" class="rounded mx-auto d-block" alt="Pulp Fiction"></a></div>
+                <div class="col">><a class="btn movie-link" data-id="ace" href="/semillero-angular/src/app/pages/detalle/detalle.component.html"><img src="/semillero-angular/public/recurso/Comedy/aceVentura.jpg" class="rounded mx-auto d-block" alt="Pulp Fiction"></a></div>
+                <div class="col">><a class="btn movie-link" data-id="over" href="/semillero-angular/src/app/pages/detalle/detalle.component.html"><img src="/semillero-angular/public/recurso/Comedy/hangOver.jpg" class="rounded mx-auto d-block" alt="Pulp Fiction"></a></div>
+                <div class="col">><a class="btn movie-link" data-id="scary" href="/semillero-angular/src/app/pages/detalle/detalle.component.html"><img src="/semillero-angular/public/recurso/Comedy/scary movie.jpg" class="rounded mx-auto d-block" alt="Pulp Fiction"></a></div>
+                <div class="col">><a class="btn movie-link" data-id="cool" href="/semillero-angular/src/app/pages/detalle/detalle.component.html"><img src="/semillero-angular/public/recurso/Comedy/superCool.jpg" class="rounded mx-auto d-block" alt="Pulp Fiction"></a></div>
+              
+            </div>
+          </div>
+    </section>     
+    <script>
+      document.querySelectorAll('.movie-link').forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const movieId = link.getAttribute('data-id');
+          localStorage.setItem('selectedMovie', movieId);
+          window.location.href = 'detalle.html';
+        });
+      });
+    </script> 
  </body>
-</html>
 
 
+
+<!-- 
+ <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">All Movies</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a routerLink="/movies" class="nav-link active" aria-current="page">Movies</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/series" class="nav-link active">Series</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active">Favoritos</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+        <ul class="navbar-nav ms-2">
+          <li class="nav-item">
+            <a routerLink="/profile" class="nav-link active">Perfil</a>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<section>
+  <div class="cont">
+    <h2>Culto</h2>
+  </div>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col" *ngFor="let movie of cultMovies">
+        <a class="btn" (click)="selectMovie(movie.id)">
+          <img [src]="movie.image" class="rounded mx-auto d-block" [alt]="movie.title" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="cont">
+    <h2>Comedia</h2>
+  </div>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col" *ngFor="let movie of comedyMovies">
+        <a class="btn" (click)="selectMovie(movie.id)">
+          <img [src]="movie.image" class="rounded mx-auto d-block" [alt]="movie.title" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+-->

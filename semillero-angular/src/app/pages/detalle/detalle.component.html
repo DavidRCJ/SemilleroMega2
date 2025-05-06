@@ -1,0 +1,91 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/semillero-angular/src/app/pages/detalle/detalle.component.html">
+  <title>Detalle Película</title>
+</head>
+<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">All Movies</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/semillero-angular/src/app/pages/movies/movies.component.html">Movies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/semillero-angular/src/app/pages/series/series.component.html">Series</a>
+          </li>
+         <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Favoritos</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="A lo mejor si existe">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+          <div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/semillero-angular/src/app/pages/profile/profile.component.html">Perfil</a>
+                </li>
+            </ul>
+          </div>
+        </form>
+      </div>
+    </div>
+</nav>
+
+<body class="bg-dark text-light">
+  <div class="container mt-5 text-center">
+    <h1 id="titulo"></h1>
+    <img id="imagen" src="" alt="Poster" class="img-fluid my-4" style="max-height: 400px;">
+    <h4 id="director"></h4>
+    <p id="anio"></p>
+    <p id="sinopsis" class="mx-auto" style="max-width: 600px;"></p>
+
+    <div class="mt-4">
+      <button class="btn btn-outline-warning m-2" onclick="addToFavorites()">Agregar a Favoritos</button>
+      <button class="btn btn-outline-info m-2" onclick="verTrailer()">Ver Tráiler</button>
+      <button class="btn btn-outline-success m-2" onclick="verPelicula()">Ver Película</button>
+    </div>
+  </div>
+ 
+  <script src="./detalle.component.ts"></script>
+  <script>
+    document.querySelectorAll('.movie-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const movieId = link.getAttribute('data-id');
+        localStorage.setItem('selectedMovie', movieId);
+        window.location.href = 'detalle.html';
+      });
+    });
+  </script> 
+</body>
+
+
+
+<!--
+<div *ngIf="data; else notFound">
+  <div class="container mt-5">
+    <h1 id="titulo">{{ data.titulo }}</h1>
+    <p id="anio">Año: {{ data.anio }}</p>
+    <p id="director">Director: {{ data.director }}</p>
+    <p id="sinopsis">{{ data.sinopsis }}</p>
+    <img id="imagen" [src]="data.imagen" class="img-fluid mb-3" alt="{{ data.titulo }}">
+    <div>
+      <button class="btn btn-primary me-2" (click)="verTrailer()">Ver tráiler</button>
+      <button class="btn btn-success me-2" (click)="verPelicula()">Ver película</button>
+      <button class="btn btn-warning" (click)="addToFavorites()">Agregar a favoritos</button>
+    </div>
+  </div>
+</div>
+
+<ng-template #notFound>
+  <h2 class="text-center mt-5">Película no encontrada 😢</h2>
+</ng-template>
+
+-->
