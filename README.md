@@ -59,6 +59,43 @@ Bueno creamos los packages para cada vista en el proyecto
 
 Ahora procedemos a conectar HTML Y CSS de las diferentes vistas
 
+Creamos cada  componente dentro de Pages donde estara cada vista que tenmos de html, las carpetas se ven de la siguiente forma:
+
+
+![](/CapturasPantallaEntrega/migracionAngularTS.png)
+
+
+Son lo modulos son con su componente HMLT,JS,CSS, pero tengo unas incosistencias en los paths o rutas dado que no lee imagenes, o no muestra la vista como debe ser ejemplo si solo ejecutop el html y luego de angular se ve asi
+
+
+
+Ejmplo la pantalla de bienvenida del lado izquiero tenemos el la vista ejeuta desde angular y del otro solo de live sever del HTML ambos desde visual code.
+
+![](/CapturasPantallaEntrega/comparacion.png)
+
+
+Ahora despues de presionar el boton de login
+
+
+![](/CapturasPantallaEntrega/comparacion2.png)
+
+
+Sigo en reparacion y consultando documentacion porqiue no puedo avanzar a la fase de testing del 3  sprint espro poder resolverlo en la semana. 
+
+Puntos pendientes y logradps del 3 sprint
+
+
+Puntos cubietos:
+  Responisvidad
+  Performance 40$
+
+  
+Puntos Faltantes:
+  Implementacionde asincronos
+  RXJS
+  Testing
+
+
 
 
 
