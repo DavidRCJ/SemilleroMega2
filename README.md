@@ -95,8 +95,23 @@ Puntos Faltantes:
   RXJS
   Testing
 
+Continuando con la  migracion a angular y esta casi completa como se puede apreciar en estas imagenes
+
+![](/CapturasPantallaEntrega/migraAnfular1.png)
+![](/CapturasPantallaEntrega/migraAnfular2.png)
+![](/CapturasPantallaEntrega/migraAnfular3.png)
 
 
+solo tengo un detalle con el componente detalle.component.html Cuando hago el llamado desde movies o series no me carga los datos de la pelicula entra a la pagina pero no carga elemetos
+
+
+![](/CapturasPantallaEntrega/migraAnfular4.png)
+
+Puse un console log para ver si cargaba detalle. hmtl y si pero no carga elemntos como ya mencione al parecer creo que no me esta guardadno el id en el local storage y no me esta enlazando a la pagina correspondiente
+Si pude observar en la parte de movies hago el llamdo con un boton que me redirecciona al metodo que verdetalle donde almaceno el ID y llamo al componente detalle, si vamos al html de detalle.component.html tiene los datos a caragar pero no refleja nada en la vista
+sigo investigando como cargar esos estilos espero tenerlos para el fin de semana para completar el sprint 3
+
+![](/CapturasPantallaEntrega/migraAnfular5.png)
 
 
 
