@@ -1,106 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Pacifico&family=Titan+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Pacifico&family=Titan+One&display=swap");
 
-body{
-  background: linear-gradient(20deg,black,rgb(31, 35, 41),rgb(136, 136, 136),rgb(18, 21, 25));  
-}
-  .matriz {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-    grid-template-rows: repeat(1, auto);   /* 2 filas */
-    gap:0.1%;    
-    height: 100vh;
-    z-index: 1;
-   
-  }
-  
-  .matriz div {
-    border: 1px solid transparent;
-    text-align: center;
-  }
-  
-  .matriz div .matriz2{
-    display: grid;
-    grid-template-columns: repeat(1, 2); /* 3 columnas */
-    grid-template-rows: repeat(1, auto);   /* 2 filas */
-    gap:10;
-    height: 100vh;
-  }
-    
 
-  .matriz div .matriz2 div{
-    border: 1px solid transparent;
-    text-align: center;
+.loginBody {
+  background: linear-gradient(20deg, black, rgb(31, 35, 41), rgb(136, 136, 136), rgb(18, 21, 25));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
 }
 
-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Recorta para llenar sin deformar */
-    display: block;
-    border-radius: 20%;
-    z-index: 1;
+.matriz {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100vh;
+  width: 100vw;
+  gap: 5px;
 }
 
-.matriz div .matriz3{
-    display: grid;
-    grid-template-columns: repeat(1,1); /* 3 columnas */
-    grid-template-rows: repeat(1, 3);   /* 2 filas */
-    gap: 50px;
-    padding: 20%;
-    height: 200vh;
-    background-color: #030c3b;
-    position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  
+.matriz2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  height: 100%;
+  width: 100%;
 }
 
+.matriz2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.matriz3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #030c3b;
+}
 
 .hachi-maru-pop-regular {
-    font-family: "Hachi Maru Pop", cursive;
-    font-size: 120px;
-    font-style:  cursive;
-    text-shadow: 2em;
-    text-shadow: 5px 5px 5px rgb(0, 11, 44);
-    color: rgb(255, 255, 255);
-    padding: 1%5% 0;
-  }
+  font-family: "Hachi Maru Pop", cursive;
+  font-size: 50px;
+  text-shadow: 3px 3px 5px rgb(0, 11, 44);
+  color: white;
+  text-align: center;
+}
 
-  .log{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  }
+.log {
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
 
- 
-  /* 🌐 RESPONSIVE PARA CELULARES */
+.d-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
 @media (max-width: 768px) {
   .matriz {
-    grid-template-columns: 1fr; /* una sola columna en móviles */
+    grid-template-columns: 1fr;
   }
 
   .hachi-maru-pop-regular {
     font-size: 40px;
   }
 
-  img {
-    width: 300;
-
-  }
-
   .matriz3 {
-    padding: 1%;
-   /*gap: 5px;*/
+    height: auto;
+    width: 90%;
+    padding: 20px;
   }
 
   .log {
-    position: relative;
-    transform: none;
-    top: auto;
-    left: auto;
     margin: 10px auto;
   }
 }

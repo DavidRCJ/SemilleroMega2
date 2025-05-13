@@ -1,28 +1,19 @@
-<link rel="stylesheet" href="/semillero-angular/src/app/pages/home/home.component.css">
+<section class="Content text-center">
+  <div>
+    <h1 class="titan-one-regular">ALL MOVIES</h1>
+    <hr />
+  </div>
 
-<body>
-  <section class="Content text-center">
-    <div>
-      <h1 class="titan-one-regular">ALL MOVIES</h1>
-      <hr />
-    </div>
-  
-    <div class="my-4">
-      <!-- <button routerLink="/semillero-angular/src/app/pages/login/login.component.html" id="btn" class="btn btn-primary btn-lg">Login</button> -->
-     
-      <a class="btn" href="/semillero-angular/src/app/pages/login/login.component.html">
-        <button type="button" id="btn" class="btn btn-primary btn-lg">Login</button>
-      </a>
-      
-    </div>
-  
-    <div>
-      <hr />
-      <p class="pacifico-regular">
-        Tu sitio preferido de Películas y Series
-      </p>
-    </div>
-  </section>
+  <div class="my-4">
+    <a class="btn">
+      <button (click)="goHome()" type="button" id="btn" class="btn btn-primary btn-lg">
+        Login
+      </button>
+    </a>
+  </div>
 
-
-</body>
+  <div>
+    <hr />
+    <p class="pacifico-regular">Tu sitio preferido de Películas y Series</p>
+  </div>
+</section>

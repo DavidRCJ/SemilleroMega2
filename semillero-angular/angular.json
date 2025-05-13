@@ -27,17 +27,17 @@
               }
             ],
             "styles": [
-              "src/styles.css",              
+              "src/styles.css",
               "src/app/pages/home/home.component.css",
               "src/app/pages/login/login.component.css",
               "src/app/pages/register/register.component.css",
               "src/app/pages/movies/movies.component.css",
               "src/app/pages/series/series.component.css",
               "src/app/pages/profile/profile.component.css",
-              "src/app/pages/detalle/detalle.component.css",
-            ],
+              "src/app/pages/detalle/detalle.component.css"          
+          ],
             "scripts": [
-              
+                
             ],
             "server": "src/main.server.ts",
             "prerender": true,
@@ -100,16 +100,7 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/app/pages/home/home.component.css",
-              "src/app/pages/login/login.component.css",
-              "src/app/pages/register/register.component.css",
-              "src/app/pages/movies/movies.component.css",
-              "src/app/pages/series/series.component.css",
-              "src/app/pages/profile/profile.component.css",
-              "src/app/pages/detalle/detalle.component.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"             
-
-            ],
+                          ],
             "scripts": [
                 "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ]

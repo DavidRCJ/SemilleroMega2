@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { FormsModule } from '@angular/forms'; // ✅ IMPORTANTE
+
 @Component({
   selector: 'app-profile',
   standalone: true,
-  imports: [],
+  imports: [FormsModule], // ✅ Agregado aquí
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.css']
 })
-
 export class ProfileComponent implements OnInit {
   fullName = '';
   userName = '';
@@ -32,6 +33,7 @@ export class ProfileComponent implements OnInit {
       this.editMode = false;
     }
 
+    
     const savedImg = localStorage.getItem('profileImage');
     if (savedImg) {
       this.profileImage = savedImg;
@@ -48,7 +50,7 @@ export class ProfileComponent implements OnInit {
     };
 
     if (!this.validateFields(profile)) return;
-
+  
     localStorage.setItem('userProfile', JSON.stringify(profile));
     this.editMode = false;
     alert('¡Perfil guardado!');
@@ -60,7 +62,7 @@ export class ProfileComponent implements OnInit {
 
   onSalir(): void {
     localStorage.removeItem('userProfile');
-    this.router.navigate(['/']); // o cambia a la ruta que corresponda
+    this.router.navigate(['/home']);
   }
 
   onImageChange(event: any): void {

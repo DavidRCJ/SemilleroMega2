@@ -1,53 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Titan+One&display=swap');
-body
-{   
-    background-image: url('/assets/cultoMov.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    z-index: -1;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Titan+One&display=swap");
+section {
+  background-image: url("../../../../public/assets/cultoMov.png");
+  background-size: cover; /*  La imagen se escalará para cubrir el fondo, recortando si es necesario */
+  background-position: center; /* La imagen se centra en el fondo */
+  background-attachment: fixed; /*  La imagen se mantiene fija en el fondo mientras se desplaza la página */
 
-.Content{
-    width: 100%;
-    text-align:center;
-    margin-top: auto; 
-    padding:15%;
+  width: 100vh;
+}
+
+.Content {
+  width: 100%;
+  text-align: center;
+  margin-top: auto;
+  padding: 15%;
 }
 .titan-one-regular {
-    font-family: "Titan One", sans-serif;
-    font-size: 120px;
-    color: rgb(255, 53, 124);
-    text-shadow: 5px 5px 5px rgb(70, 255, 172);
-    font-style: normal;     
-    margin-bottom: 50px;    
-  }
-
-#btn{
-   background-color: rgb(227, 13, 255);
-   width: 200px;
-   height:80px;
-   border-color: blue;
-   margin: bottom 200px;
-   z-index: 2;
+  font-family: "Titan One", sans-serif;
+  font-size: 120px;
+  color: rgb(255, 53, 124);
+  text-shadow: 5px 5px 5px rgb(70, 255, 172);
+  font-style: normal;
+  margin-bottom: 50px;
 }
 
-  .pacifico-regular {
-    font-family: "Pacifico", cursive;
-    font-size: 80px;
-    color: rgb(246, 255, 0);
-    font-style: normal;
-    margin-bottom: 100px;
-  }
+#btn {
+  background-color: rgb(227, 13, 255);
+  width: 200px;
+  height: 80px;
+  border-color: rgb(234, 255, 0);
+  margin: bottom 200px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: large;
+  z-index: 2;
+}
 
-  .Content {
-    width: 100%;
-    max-width: 1200px; /* Limita el ancho en pantallas grandes */
-    margin: 0 auto;     /* Centra el contenido */
-    text-align: center;
-    padding: 10%;       /* Espaciado general */
-    box-sizing: border-box;
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-size: 80px;
+  color: rgb(246, 255, 0);
+  font-style: normal;
+
+  margin-bottom: 100px;
+}
+
+.Content {
+  width: 100%;
+  max-width: 1200px; /* Limita el ancho en pantallas grandes */
+  margin: 0 auto; /* Centra el contenido */
+  text-align: center;
+  padding: 10%; /* Espaciado general */
+  box-sizing: border-box;
 }
 
 /* Estilo responsive para móviles */

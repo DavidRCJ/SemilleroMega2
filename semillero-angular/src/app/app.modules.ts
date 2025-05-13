@@ -9,6 +9,8 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { DetalleComponent } from './pages/detalle/detalle.component';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { routes } from './app.routes';
 
 
 @NgModule({
