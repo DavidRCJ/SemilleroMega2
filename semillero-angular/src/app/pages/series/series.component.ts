@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-series',
-  standalone: true,
-  imports: [],
+  selector: 'app-movies',
   templateUrl: './series.component.html',
-  styleUrl: './series.component.css'
+  styleUrls: ['./series.component.css']
 })
 export class SeriesComponent {
+  constructor(private router: Router) {}
 
+  verDetalle(movieId: string): void {
+      localStorage.setItem('selectedMovie', movieId);
+    this.router.navigate(['/detalle']);
+  }
 }
