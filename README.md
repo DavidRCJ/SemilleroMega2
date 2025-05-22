@@ -123,10 +123,33 @@ He completado la migracion a Angular V18, logranddo solucionar los problemas pre
 
 Ahora procedemos a ejecutar los test cases del sprint 3, lo faltante que serian los puntos
 
-Puntos Faltantes:
-  Implementacionde asincronos/   RXJS  /  Testing
+Para el sprint 3 diseñamos ciertos test cases para storage
 
-  SPRINT 4 
+
+Anexo captura de la ejecucion en Karma Jasmine, de 12 test cases fallaron 3 pero esta ecelente porque esos botones de agregar y eliminar aun no estan definidos
+
+
+![](/CapturasPantallaEntrega/test.jpg)
+
+
+Ahora anexo captura del Code Coverage
+
+
+![](/CapturasPantallaEntrega/test2.jpg)
+
+Con esto damos por entregada el Sprint 3 cubriendo todos los puntos reqeuridos 
+
+
+Puntos cubietos:
+  Responisvidad
+  Performance 40$
+  Implementacionde asincronos
+  RXJS
+  Testing
+
+
+
+Ahora solo falta implementar SPRINT 4 
   Falta los siguientes puntos
   T-SQL/     LOGIN CON DB/    Consumo de la Base de datos /    Seguridad de Login
 
