@@ -115,6 +115,24 @@ sigo investigando como cargar esos estilos espero tenerlos para el fin de semana
 
 
 
+He completado la migracion a Angular V18, logranddo solucionar los problemas presentados de local Storage y muestra de contenido con css, el proble se presentaba en un a linea de Codigo de NGIF, V18 no la reconocia entonces se cambio por un div ahora tenemos este resultado, hicimos caso de no usar degradados y se opto por colores mas simple como se muestra a continuacion
+
+![](/CapturasPantallaEntrega/finalCss.png)
+
+
+
+Ahora procedemos a ejecutar los test cases del sprint 3, lo faltante que serian los puntos
+
+Puntos Faltantes:
+  Implementacionde asincronos/   RXJS  /  Testing
+
+  SPRINT 4 
+  Falta los siguientes puntos
+  T-SQL/     LOGIN CON DB/    Consumo de la Base de datos /    Seguridad de Login
+
+
+
+
 
 
 
