@@ -10,6 +10,8 @@ import { RouterOutlet} from '@angular/router';
   
 })
 export class AppComponent {
+  //title = 'Hello, semillero-angular'; // Agregar título si falta
+
   title = 'semillero-angular';
 }
 
