@@ -8,11 +8,11 @@ Actualmente cubrimos el Sprint 5, Cada sprint se implemnetan diferentes funciona
 
 ## Contenido
 
-*   [Sprint 1](#seccion-1)
-*   [Sprint 2](#seccion-2)
-*   [Sprint 3](#seccion-3)
-*   [Sprint 4](#seccion-4)
-*   [Sprint 5](#seccion-5)
+*   [Sprint 1](#sprint-1)
+*   [Sprint 2](#sprint-2)
+*   [Sprint 3](#sprint-3)
+*   [Sprint 4](#sprint-4)
+*   [Sprint 5](#sprint-5)
 
 ---
 
@@ -97,12 +97,7 @@ El botón salir nos permite salir a la pantalla inicial que es home.
 
 ### Sprint 2
 
-Aquí puedes encontrar la información sobre la sección 2.
 
-
-
-
-Sprint 2
 En este sprint se adecuo la responsabilidad en cada pestaña y migración a angular y type script
 /n
 
@@ -230,10 +225,6 @@ He completado la migracion a Angular V18, logranddo solucionar los problemas pre
 
 
 ### Sprint 3
-
-Aquí puedes encontrar la información sobre la sección 3.
-
-
 
 
 Ahora procedemos a ejecutar los test cases del sprint 3, lo faltante que serian los puntos
