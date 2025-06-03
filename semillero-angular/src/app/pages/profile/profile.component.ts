@@ -60,10 +60,12 @@ export class ProfileComponent implements OnInit {
     this.editMode = true;
   }
 
-  onSalir(): void {
-    localStorage.removeItem('userProfile');
-    this.router.navigate(['/home']);
+ onSalir(): void {
+  localStorage.removeItem('token'); // ✅ Eliminar el token
+// localStorage.removeItem('userProfile');
+  this.router.navigate(['/login']);
   }
+ 
 
   onImageChange(event: any): void {
     const file = event.target.files[0];

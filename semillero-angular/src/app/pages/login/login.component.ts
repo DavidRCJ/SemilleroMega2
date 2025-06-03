@@ -19,20 +19,26 @@ export class LoginComponent {
     { email: 'usuario1@example.com', password: '123456' },
     { email: 'usuario2@example.com', password: 'password' }
   ];
-
   login() {
-    console.log("Datos ingresados:", this.email, this.password); // Para depurar
-
-    const usuarioValido = this.usuariosRegistrados.find(
-      user => user.email === this.email && user.password === this.password
-    );
-
-    if (usuarioValido) {
-      console.log("Login exitoso. Redirigiendo a Movies...");
-      this.router.navigate(['/movies']); // Redirige a la página de películas
-    } else {
+   /* console.log("Datos ingresados:", this.email, this.password); // Para depurar
+    const usuarioValido = this.usuariosRegistrados.find( user => user.email === this.email && user.password === this.password
+    );    if (usuarioValido) {      console.log("Login exitoso. Redirigiendo a Movies...");
+      this.router.navigate(['/movies']); // Redirige a la página de películas     } else {
       alert("Usuario o contraseña incorrectos. Inténtalo de nuevo.");
-    }
+    }*/
+  console.log("Datos ingresados:", this.email, this.password);
+  const usuarioValido = this.usuariosRegistrados.find(
+    user => user.email === this.email && user.password === this.password
+  );
+
+  if (usuarioValido) {
+    const fakeToken = btoa(`${this.email}:${this.password}`); // Simulación de token usando base64
+    localStorage.setItem('token', fakeToken); // ✅ Guarda el token en localStorage
+    console.log("Login exitoso. Redirigiendo a Movies...");
+    this.router.navigate(['/movies']); 
+  } else {
+    alert("Usuario o contraseña incorrectos. Inténtalo de nuevo.");
+  }
   }
 
   registro() {

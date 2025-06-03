@@ -44,13 +44,15 @@
 </nav> 
 
  <section class="moviBody">
+ 
   <section class="cultoConta">
     <div class="cont">
       <h2>Culto</h2>
     </div>
-    <div class="container text-center">
+    <div  #spinnerContainer class="container text-center">
       <div class="row">
         <div class="col">
+           
           <button class="btn movie-link" (click)="verDetalle('pulpFiction')"><img src="/assets/Culto/pullFitction.jpg" class="rounded mx-auto d-block" alt="Pulp Fiction">
           </button>
         </div>
@@ -74,7 +76,7 @@
     </div>
   </section>
 
-  <section class="comedyConta">
+  <section #spinnerContainer class="comedyConta">
     <div class="cont">
       <h2>Comedia</h2>
     </div>

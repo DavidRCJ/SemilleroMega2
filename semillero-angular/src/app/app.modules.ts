@@ -11,8 +11,8 @@ import { DetalleComponent } from './pages/detalle/detalle.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
-
-
+import { NgxSpinnerModule } from 'ngx-spinner';
+    
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +23,7 @@ import { routes } from './app.routes';
     SeriesComponent,
     ProfileComponent,
     DetalleComponent,
+    NgxSpinnerModule,
   ],
   imports: [
     BrowserModule,
@@ -32,4 +33,8 @@ import { routes } from './app.routes';
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
+
+
+
