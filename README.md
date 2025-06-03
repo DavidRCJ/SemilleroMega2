@@ -1,5 +1,77 @@
-# SemilleroMega2
-Semillero Mega Sprint 2
+# SemilleroMega: Desarrollo de APP Web para un sitio de streaming 
+
+---
+##Owner: David Ricardo Cruz Juarez
+
+###Objetivo: El objetivo de este repositorio es mostrar el avance en cada sprint adecuando el proyecto a las necesidades de los cursos impartidos por el Challenger.
+Actualmente cubrimos el Sprint 5, Cada sprint se implemnetan diferentes funcionalidades y se agregan mas tecnologias.
+
+## Contenido
+
+*   [Sprint 1](#sprint-1)
+*   [Sprint 2](#sprint-2)
+*   [Sprint 3](#sprint-3)
+*   [Sprint 4](#sprint-4)
+*   [Sprint 5](#sprint-5)
+
+---
+
+### Sprint 1
+
+Aquí puedes encontrar la información sobre la sección 1.
+
+
+Sprint 1: La primer version del repositorio aplicando HTML, CSS y JS lo pueden encontrar en la siguiente liga
+
+https://github.com/DavidRCJ/SemilleroMega.git
+
+### 2. Requerimientos tecnicos - 
+Esquema de baja fidelidad en Canva
+Diagramda de Flujo en DrawIO para el funcionamiento de la interfaz
+Desarrollado en Visual Studio Code con HTML, CSS y JS
+### 3. ¿Como instalar?
+Clonar el Repo en su pc en la terminal copiar el siguiente comando
+      git clone https://github.com/DavidRCJ/SemilleroMega.git
+### 4. Mockup de la aplicación
+Un primer diseño, esta en Draw explica el Flujo de las pestañas
+![](/assets/mockup.png)
+
+### 4. Capturas de pantalla - 5 capturas con explicacion
+Para iniciar Abri el Index.html, y cargar el liveserver para entrar a la ventana de welcome
+![](./CapturasPantallaEntrega/welcome.jpg)
+2.- Seleccionar Login
+![](./CapturasPantallaEntrega/login.jpg)
+3.- Escribir usuario xxxx,password xxxx y presionar launch
+4.- Esatras dentro de movies o series puedes interactuar con el navbar con Movies
+![](./CapturasPantallaEntrega/VentanaPeliculas.jpg)
+    Series, puedes ver las series disponibles, por ahroa no pero talves en el futuro
+    ![](./CapturasPantallaEntrega/VentanaSeries.jpg)
+    Perfil, permite agregar algunos datos
+    ![](./CapturasPantallaEntrega/perfil.jpg)
+>>>>>>> f4176f54ed41cc0840480e4d722a02d7120070d3
+
+
+Para cuando se permite entrar nos arroja a la pestaña de movies 
+![](/CapturasPantallaEntrega/verificacion.png)
+
+
+3.- Las ventanas que necesitan almacenar datos se les dio funcionalidad como la de perfil permitiendo gaurdar y alamcenar datos del usuario ademas de cambio de foto.
+Se le dio La validación para almacenar campos hacemos uso del Local Storage, para almacenar datos del usuario además permite cambiar la imagen de usuario cuando pulsamos sobre ell. 
+![](/CapturasPantallaEntrega/perfil.png)
+La interfaz presenta 3 botones, guardar, editar y sali.
+
+El botón guardar: cuando los campos están vacíos permite guardar los datos.
+
+El segundo botón editar permite editar los datos cuando ya se guardan los datos.
+
+El botón salir nos permite salir a la pantalla inicial que es home.
+
+
+
+---
+
+### Sprint 2
+
 En este sprint se adecuo la responsabilidad en cada pestaña y migración a angular y type script
 /n
 
@@ -13,7 +85,6 @@ En este sprint se adecuo la responsabilidad en cada pestaña y migración a angu
 
 
 Esta imagen muestra que si las credenciales no son correctas no permite entrar y muestra el siguiente mensaje, para logarse se ocupa:
-
 
 User: user@mega.com
 Password: mega2025
@@ -121,14 +192,137 @@ He completado la migracion a Angular V18, logranddo solucionar los problemas pre
 
 
 
+
+
+---
+
+
+### Sprint 3
+
+
 Ahora procedemos a ejecutar los test cases del sprint 3, lo faltante que serian los puntos
 
-Puntos Faltantes:
-  Implementacionde asincronos/   RXJS  /  Testing
+Para el sprint 3 diseñamos ciertos test cases para storage
 
-  SPRINT 4 
+
+Anexo captura de la ejecucion en Karma Jasmine, de 12 test cases fallaron 3 pero esta ecelente porque esos botones de agregar y eliminar aun no estan definidos
+
+
+![](/CapturasPantallaEntrega/test.jpg)
+
+
+Ahora anexo captura del Code Coverage
+
+
+![](/CapturasPantallaEntrega/test2.jpg)
+
+Con esto damos por entregada el Sprint 3 cubriendo todos los puntos reqeuridos 
+
+
+Puntos cubietos:
+  Responisvidad
+  Performance 40$
+  Implementacionde asincronos
+  RXJS
+  Testing
+
+
+
+Ahora solo falta implementar SPRINT 4 
   Falta los siguientes puntos
   T-SQL/     LOGIN CON DB/    Consumo de la Base de datos /    Seguridad de Login
+
+---
+
+
+### Sprint 4
+
+Aquí puedes encontrar la información sobre la sección 4.
+
+---
+
+
+### Sprint 5
+
+Aquí puedes encontrar la información sobre la sección 5.
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
