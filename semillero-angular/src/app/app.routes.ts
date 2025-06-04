@@ -13,6 +13,11 @@ export const routes: Routes = [
   //{ path: '', redirectTo: 'home', pathMatch: 'full' },
   //{ path: 'home', component: HomeComponent },
   { path: '', loadComponent:() => import('./pages/home/home.component').then(m => m.HomeComponent) },
+
+  // { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule) },
+  // { path: 'register', loadChildren: () => import('./register/register.module').then(m => m.RegisterModule) },
+  { path: '**', redirectTo: 'login' },
+
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'movies', component: MoviesComponent, canActivate: [AuthGuard] }, // ✅ Protegida
