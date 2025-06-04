@@ -13,6 +13,7 @@ Actualmente cubrimos el Sprint 5, Cada sprint se implemnetan diferentes funciona
 *   [Sprint 3](#sprint-3)
 *   [Sprint 4](#sprint-4)
 *   [Sprint 5](#sprint-5)
+*   [Retrospectiva](#retrospectiva)
 
 ---
 
@@ -237,7 +238,53 @@ Ahora solo falta implementar SPRINT 4
 
 ### Sprint 4
 
-Aquí puedes encontrar la información sobre la sección 4.
+Puntos a cubrir en este Sprint
+
+Implementacion de Lazzy Loading
+
+
+
+![](/CapturasPantallaEntrega/4.0.0.png)
+
+
+En esta entrega se realizo leazzy loading en la pagina principal de carga dado que los demas elementos son individuales entonces no tendria mas que implementar, ademas se implemento el AuthGuard para validar el login en las demas vistas
+como se aprecia en la imagen
+
+
+Seguridad de login
+
+Por ahora como tuve probelas con la base de datos mejor dicho el entorno de SQLMSS y la vinvulacion por esta ocasion entrego una cifrado BASE64 que para la otre tengo penado implementar SHA254
+
+
+![](/CapturasPantallaEntrega/4.0.1.jpg)
+
+
+Punto pendientes 
+
+
+TSQL
+
+
+Login con DB
+
+
+Consumo de la base de datos
+
+
+Como se muestra en la imagen, para iniciar con SQL  instale la version  SQLMS V21 como se muestra en la imagena ademas de instalar el server SQL Developer para corre la DB pero se mostro estre problema
+
+
+![](/CapturasPantallaEntrega/4.0.2.png)
+
+
+Se trato de instalar otros servers como la base o la Express pero no se obtubo respuesta alguna, para ello decidi bajar de version a la V20.2.1 la cual obtuve mejor respuesta como se aprecia en la imagen ahroa solo falta empezar los scripts para poder implementar y hacer consumo de DB
+
+
+
+![](/CapturasPantallaEntrega/4.0.3.jpg)
+
+![](/CapturasPantallaEntrega/4.0.4.jpg)
+
 
 ---
 
@@ -251,7 +298,18 @@ Aquí puedes encontrar la información sobre la sección 5.
 
 
 
+### Retrospectiva
 
+¿Que hice bien?
+La implementacion de Lazzy Loading y el Auth Guard algo basico para esta entrega pero cumple con el requerimiento
+
+¿Que no salio bien?
+La creacion y uso del SQLMSS tarde varios dias en resolver ese problema, cuando se encuetra la solucion se descansa un poco 
+
+¿Que puedo hacer diferente?
+
+La implementacion de la DB para poder consumir y usar DB
+---
 
 
 
