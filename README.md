@@ -87,19 +87,19 @@ En este sprint se adecuo la responsabilidad en cada pestaña y migración a angu
 
 Esta imagen muestra que si las credenciales no son correctas no permite entrar y muestra el siguiente mensaje, para logarse se ocupa:
 
-User: user@mega.com
-Password: mega2025
-
 ![](/CapturasPantallaEntrega/contrasenia.png)
-
 
 Para cuando se permite entrar nos arroja a la pestaña de movies 
 ![](/CapturasPantallaEntrega/verificacion.png)
 
 
 3.- Las ventanas que necesitan almacenar datos se les dio funcionalidad como la de perfil permitiendo gaurdar y alamcenar datos del usuario ademas de cambio de foto.
-Se le dio La validación para almacenar campos hacemos uso del Local Storage, para almacenar datos del usuario además permite cambiar la imagen de usuario cuando pulsamos sobre ell. 
+Se le dio La validación para almacenar campos hacemos uso del Local Storage, para almacenar datos del usuario además permite cambiar la imagen de usuario cuando pulsamos sobre el.
+
+
 ![](/CapturasPantallaEntrega/perfil.png)
+
+
 La interfaz presenta 3 botones, guardar, editar y sali.
 
 El botón guardar: cuando los campos están vacíos permite guardar los datos.
@@ -154,18 +154,9 @@ Ahora despues de presionar el boton de login
 
 Sigo en reparacion y consultando documentacion porqiue no puedo avanzar a la fase de testing del 3  sprint espro poder resolverlo en la semana. 
 
+
 Puntos pendientes y logradps del 3 sprint
 
-
-Puntos cubietos:
-  Responisvidad
-  Performance 40$
-
-  
-Puntos Faltantes:
-  Implementacionde asincronos
-  RXJS
-  Testing
 
 Continuando con la  migracion a angular y esta casi completa como se puede apreciar en estas imagenes
 
@@ -220,18 +211,6 @@ Ahora anexo captura del Code Coverage
 Con esto damos por entregada el Sprint 3 cubriendo todos los puntos reqeuridos 
 
 
-Puntos cubietos:
-  Responisvidad
-  Performance 40$
-  Implementacionde asincronos
-  RXJS
-  Testing
-
-
-
-Ahora solo falta implementar SPRINT 4 
-  Falta los siguientes puntos
-  T-SQL/     LOGIN CON DB/    Consumo de la Base de datos /    Seguridad de Login
 
 ---
 
@@ -242,6 +221,7 @@ Puntos a cubrir en este Sprint
 
 Implementacion de Lazzy Loading
 
+TSQL
 
 
 ![](/CapturasPantallaEntrega/4.0.0.png)
@@ -259,17 +239,6 @@ Por ahora como tuve probelas con la base de datos mejor dicho el entorno de SQLM
 ![](/CapturasPantallaEntrega/4.0.1.jpg)
 
 
-Punto pendientes 
-
-
-TSQL
-
-
-Login con DB
-
-
-Consumo de la base de datos
-
 
 Como se muestra en la imagen, para iniciar con SQL  instale la version  SQLMS V21 como se muestra en la imagena ademas de instalar el server SQL Developer para corre la DB pero se mostro estre problema
 
@@ -284,6 +253,29 @@ Se trato de instalar otros servers como la base o la Express pero no se obtubo r
 ![](/CapturasPantallaEntrega/4.0.3.jpg)
 
 ![](/CapturasPantallaEntrega/4.0.4.jpg)
+
+Consegui poder crear la Base de datos como se muestra en la imagen a continuacion, se crearon las bases de datos las pelicuas en contenido y dos usuarios cifrados
+
+
+![](/CapturasPantallaEntrega/4.1.2.jpg)
+
+
+![](/CapturasPantallaEntrega/4.1.1.jpg)
+
+
+![](/CapturasPantallaEntrega/4.1.0.jpg)
+
+
+Ahora solo falta consumir esos usuarios para poder acceder
+
+
+Punto pendientes 
+
+
+Login con DB
+
+
+Consumo de la base de datos
 
 
 ---
