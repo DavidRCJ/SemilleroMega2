@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-//import { HomeComponent } from './pages/home/home.component';
+import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { MoviesComponent } from './pages/movies/movies.component';
@@ -14,9 +14,9 @@ export const routes: Routes = [
   //{ path: 'home', component: HomeComponent },
   { path: '', loadComponent:() => import('./pages/home/home.component').then(m => m.HomeComponent) },
 
-  // { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule) },
-  // { path: 'register', loadChildren: () => import('./register/register.module').then(m => m.RegisterModule) },
-  { path: '**', redirectTo: 'login' },
+//  { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule) },
+//{ path: 'register', loadChildren: () => import('./register/register.module').then(m => m.RegisterModule) },
+  //{ path: '**', redirectTo: 'login' },
 
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
