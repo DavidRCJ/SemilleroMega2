@@ -1,7 +1,7 @@
 # SemilleroMega: Desarrollo de APP Web para un sitio de streaming 
 
 ---
-##Owner: David Ricardo Cruz Juarez
+#Owner: David Ricardo Cruz Juarez
 
 ###Objetivo: El objetivo de este repositorio es mostrar el avance en cada sprint adecuando el proyecto a las necesidades de los cursos impartidos por el Challenger.
 Actualmente cubrimos el Sprint 5, Cada sprint se implemnetan diferentes funcionalidades y se agregan mas tecnologias.
@@ -87,19 +87,19 @@ En este sprint se adecuo la responsabilidad en cada pestaña y migración a angu
 
 Esta imagen muestra que si las credenciales no son correctas no permite entrar y muestra el siguiente mensaje, para logarse se ocupa:
 
-User: user@mega.com
-Password: mega2025
-
 ![](/CapturasPantallaEntrega/contrasenia.png)
-
 
 Para cuando se permite entrar nos arroja a la pestaña de movies 
 ![](/CapturasPantallaEntrega/verificacion.png)
 
 
 3.- Las ventanas que necesitan almacenar datos se les dio funcionalidad como la de perfil permitiendo gaurdar y alamcenar datos del usuario ademas de cambio de foto.
-Se le dio La validación para almacenar campos hacemos uso del Local Storage, para almacenar datos del usuario además permite cambiar la imagen de usuario cuando pulsamos sobre ell. 
+Se le dio La validación para almacenar campos hacemos uso del Local Storage, para almacenar datos del usuario además permite cambiar la imagen de usuario cuando pulsamos sobre el.
+
+
 ![](/CapturasPantallaEntrega/perfil.png)
+
+
 La interfaz presenta 3 botones, guardar, editar y sali.
 
 El botón guardar: cuando los campos están vacíos permite guardar los datos.
@@ -154,18 +154,9 @@ Ahora despues de presionar el boton de login
 
 Sigo en reparacion y consultando documentacion porqiue no puedo avanzar a la fase de testing del 3  sprint espro poder resolverlo en la semana. 
 
+
 Puntos pendientes y logradps del 3 sprint
 
-
-Puntos cubietos:
-  Responisvidad
-  Performance 40$
-
-  
-Puntos Faltantes:
-  Implementacionde asincronos
-  RXJS
-  Testing
 
 Continuando con la  migracion a angular y esta casi completa como se puede apreciar en estas imagenes
 
@@ -201,7 +192,8 @@ He completado la migracion a Angular V18, logranddo solucionar los problemas pre
 ### Sprint 3
 
 
-Ahora procedemos a ejecutar los test cases del sprint 3, lo faltante que serian los puntos
+Ahora procedemos a ejecutar los test cases del sprint 3,
+
 
 Para el sprint 3 diseñamos ciertos test cases para storage
 
@@ -220,18 +212,6 @@ Ahora anexo captura del Code Coverage
 Con esto damos por entregada el Sprint 3 cubriendo todos los puntos reqeuridos 
 
 
-Puntos cubietos:
-  Responisvidad
-  Performance 40$
-  Implementacionde asincronos
-  RXJS
-  Testing
-
-
-
-Ahora solo falta implementar SPRINT 4 
-  Falta los siguientes puntos
-  T-SQL/     LOGIN CON DB/    Consumo de la Base de datos /    Seguridad de Login
 
 ---
 
@@ -242,6 +222,7 @@ Puntos a cubrir en este Sprint
 
 Implementacion de Lazzy Loading
 
+TSQL
 
 
 ![](/CapturasPantallaEntrega/4.0.0.png)
@@ -259,17 +240,6 @@ Por ahora como tuve probelas con la base de datos mejor dicho el entorno de SQLM
 ![](/CapturasPantallaEntrega/4.0.1.jpg)
 
 
-Punto pendientes 
-
-
-TSQL
-
-
-Login con DB
-
-
-Consumo de la base de datos
-
 
 Como se muestra en la imagen, para iniciar con SQL  instale la version  SQLMS V21 como se muestra en la imagena ademas de instalar el server SQL Developer para corre la DB pero se mostro estre problema
 
@@ -284,6 +254,33 @@ Se trato de instalar otros servers como la base o la Express pero no se obtubo r
 ![](/CapturasPantallaEntrega/4.0.3.jpg)
 
 ![](/CapturasPantallaEntrega/4.0.4.jpg)
+
+
+
+Ahora para la creacion del diagrama ER
+
+
+![](/CapturasPantallaEntrega/diagramaER.jpg)
+
+
+
+Consegui poder crear la Base de datos como se muestra en la imagen a continuacion, se crearon las bases de datos las pelicuas en contenido y dos usuarios cifrados
+
+
+![](/CapturasPantallaEntrega/4.1.2.jpg)
+
+
+![](/CapturasPantallaEntrega/4.1.1.jpg)
+
+
+![](/CapturasPantallaEntrega/4.1.0.jpg)
+
+
+Para poder consumir la base de datos creamos una API la cual llamamos ApiMovies donde declaramos data y models como se observa en la imagen donde se abarcan los puntos de creacion y consumo de base de datos, dado que el consumo lo estamos abarcando en el sprint 5 dejamos hasta esta parte el sprint 4
+
+
+
+![](/CapturasPantallaEntrega/baseV.jpg)
 
 
 ---
