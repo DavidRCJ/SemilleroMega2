@@ -1,7 +1,7 @@
 # SemilleroMega: Desarrollo de APP Web para un sitio de streaming 
 
 ---
-##Owner: David Ricardo Cruz Juarez
+#Owner: David Ricardo Cruz Juarez
 
 ###Objetivo: El objetivo de este repositorio es mostrar el avance en cada sprint adecuando el proyecto a las necesidades de los cursos impartidos por el Challenger.
 Actualmente cubrimos el Sprint 5, Cada sprint se implemnetan diferentes funcionalidades y se agregan mas tecnologias.
@@ -192,7 +192,8 @@ He completado la migracion a Angular V18, logranddo solucionar los problemas pre
 ### Sprint 3
 
 
-Ahora procedemos a ejecutar los test cases del sprint 3, lo faltante que serian los puntos
+Ahora procedemos a ejecutar los test cases del sprint 3,
+
 
 Para el sprint 3 diseñamos ciertos test cases para storage
 
@@ -254,6 +255,15 @@ Se trato de instalar otros servers como la base o la Express pero no se obtubo r
 
 ![](/CapturasPantallaEntrega/4.0.4.jpg)
 
+
+
+Ahora para la creacion del diagrama ER
+
+
+![](/CapturasPantallaEntrega/diagramaER.jpg)
+
+
+
 Consegui poder crear la Base de datos como se muestra en la imagen a continuacion, se crearon las bases de datos las pelicuas en contenido y dos usuarios cifrados
 
 
@@ -266,16 +276,11 @@ Consegui poder crear la Base de datos como se muestra en la imagen a continuacio
 ![](/CapturasPantallaEntrega/4.1.0.jpg)
 
 
-Ahora solo falta consumir esos usuarios para poder acceder
+Para poder consumir la base de datos creamos una API la cual llamamos ApiMovies donde declaramos data y models como se observa en la imagen donde se abarcan los puntos de creacion y consumo de base de datos, dado que el consumo lo estamos abarcando en el sprint 5 dejamos hasta esta parte el sprint 4
 
 
-Punto pendientes 
 
-
-Login con DB
-
-
-Consumo de la base de datos
+![](/CapturasPantallaEntrega/baseV.jpg)
 
 
 ---
