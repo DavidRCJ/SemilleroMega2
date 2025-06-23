@@ -1,3 +1,7 @@
+using ApiMovies.Models;
+
+namespace ApiMovies.Models;
+
 public class Movies
 {
     public int Id { get; set; }

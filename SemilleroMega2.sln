@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "semillero-angular", "semillero-angular", "{A0BE818F-B90D-03DB-A253-98506774BE7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiMovies", "semillero-angular\ApiMovies\ApiMovies.csproj", "{48CC6986-3AF2-2873-C545-492704C9818E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48CC6986-3AF2-2873-C545-492704C9818E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48CC6986-3AF2-2873-C545-492704C9818E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48CC6986-3AF2-2873-C545-492704C9818E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48CC6986-3AF2-2873-C545-492704C9818E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{48CC6986-3AF2-2873-C545-492704C9818E} = {A0BE818F-B90D-03DB-A253-98506774BE7A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27153080-65BE-485D-B7D0-AAC9484173B2}
+	EndGlobalSection
+EndGlobal
