@@ -288,25 +288,55 @@ Para poder consumir la base de datos creamos una API la cual llamamos ApiMovies 
 
 ### Sprint 5
 
-Aquí puedes encontrar la información sobre la sección 5.
+Los puntos a cubrir fue la conexion APIMoviesDB
+
+
+![](/CapturasPantallaEntrega/5.0.1.jpg)
+
+
+Implementacion de Swager
+
+
+![](/CapturasPantallaEntrega/5.0.0.jpg)
+
+
+
+
+Problemas Conocidos
+
+
+Durante la compilaciond de algunos archivos como 
+
+PS C:\Users\david\OneDrive\Escritorio\Semillero Mega\SemilleroMega2\semillero-angular\ApiMovies> dotnet build   
+Restauración completada (0.5s)
+  ApiMovies error con 12 errores y 1 advertencias (6.9s)
+    C:\Users\david\OneDrive\Escritorio\Semillero Mega\SemilleroMega2\semillero-angular\ApiMovies\Models\Users.cs(7,44): error CS0103: El nombre 'nunll' no existe en el contexto actual
+    C:\Users\david\OneDrive\Escritorio\Semillero Mega\SemilleroMega2\semillero-angular\ApiMovies\Repositories\UserRepository.cs(19,37): error CS1061: "DbSet<Users>" no contiene una definición para "ToListAsync" ni un método de extensión accesible "ToListAsync" que acepte un primer argumento del tipo "DbSet<Users>" (¿falta alguna directiva using o una referencia de ensamblado?)
+    C:\Users\david\OneDrive\Escritorio\Semillero Mega\SemilleroMega2\semillero-angular\ApiMovies\Repositories\MoviesRepository.cs(18,38): error CS1061: "DbSet<Movies>" no contiene una definición para "ToListAsync" ni un método de extensión accesible "ToListAsync" que acepte un primer argumento del tipo "DbSet<Movies>" (¿falta alguna directiva using o una referencia de ensamblado?)
+    C:\Users\david\OneDrive\Escritorio\Semillero Mega\SemilleroMega2\semillero-angular\ApiMovies\Controller\MoviesController.cs(20,68): error CS0103: El nombre '_movieRepository' no existe en el contexto actual
+    C:\Users\david\OneDrive\Escritorio\Semillero Mega\SemilleroMega2\semillero-angular\ApiMovies\Data\AllMoviesDBContext.cs(21,48): error CS1061: "Favorites" no contiene una definición para "MovieId" ni un método de extensión accesible "MovieId" que acepte un primer argumento del tipo "Favorites" (¿falta alguna directiva using o una referencia de ensamblado?)
+
 
 ---
 
+
+### Sprint 6
+No terminado.
 
 
 
 ### Retrospectiva
 
 ¿Que hice bien?
-La implementacion de Lazzy Loading y el Auth Guard algo basico para esta entrega pero cumple con el requerimiento
+      La mayoria de los sprints estan completos, cumplen con lo que se requiere. 
 
+ 
 ¿Que no salio bien?
-La creacion y uso del SQLMSS tarde varios dias en resolver ese problema, cuando se encuetra la solucion se descansa un poco 
+      El sprint 6 por cuestiones de tiempo ya no puedo entregarlo, tengo problemas con el IDE.
 
 ¿Que puedo hacer diferente?
+      El seguimiento de las semanas del sprint dado que tuve otras compliaciones familiares o persoanales que no me permitieron seguir el ritmo de los ultimos sprints.
 
-La implementacion de la DB para poder consumir y usar DB
----
 
 
 
